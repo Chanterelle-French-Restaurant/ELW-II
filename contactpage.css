@@ -1,0 +1,204 @@
+* {box-sizing: border-box;}
+/*Global styles*/
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-size: larger;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-image: url("chanterelle-locationpls.png");
+    padding:0px;
+    cursor: default;
+}
+
+/*Header*/
+h1 {
+    color: goldenrod;
+    text-align: center;
+    font-family: titlefont;
+    font-size: 85px;
+    font-weight: 100;
+    padding: 0;
+}
+
+h1:hover {
+    color: slategray;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times;
+    font-weight: 10;
+    font-style: oblique;
+    padding: 0;
+    font-size: xx-large;
+}
+
+h1 + h2 {
+    margin-top: -65px;
+}
+
+.column {
+    float: left;
+    width: 33%;
+    padding: 10px;
+    height: 300px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /*Navbar*/
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 1.5s;
+    padding-top: 60px;
+    text-align:center;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: goldenrod;
+    display: block;
+    transition: 0.3s;
+    line-height: 130px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: 10;
+  
+  }
+  
+  .sidenav a:hover{
+    color: black;
+    transition: 1.2s ease;}
+
+  .butonel {
+    cursor: pointer;
+    font-size: 45px;
+    padding: 100px 20px 5px 20px;
+    font-weight: lighter;
+  }
+  .butonel:hover {
+    color: slategray;
+    transition: 1s ease;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    transition: 0.3s;
+  }
+  
+.closebtn:hover {
+    color: black;
+}
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 20x;}
+    .sidenav a {font-size: 18px;}
+  }
+
+/*Content*/
+h4 {
+    font-family: Georgia, 'Times New Roman', Times;
+    font-weight: 10;
+    font-size: xx-large;
+    padding-left: 150px;
+}
+
+h4:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+h4:hover:after {
+   
+    transition: 0.5s ease;
+    width: 75%;
+    background:black;
+}
+
+
+.column2 {
+        float: left;
+        width: 30%;
+        padding: 10px;
+        text-align: center;
+}
+
+.days {
+    padding-left: 115px;
+}
+
+.hours {
+    padding-left: 95px;
+}
+p{
+    padding-left: 150px;
+}
+h4 + p {
+    margin-top: -30px;
+}
+
+h4 + ul {
+    margin-top: -30px;
+}
+
+
+
+.email:hover {
+  color: slategray;
+  transition: 0.5s ease;
+}
+
+/*Footer*/
+
+  footer {
+    text-align: center;
+    padding: 1px;
+    color: black;
+    font-family: copyright;
+    font-weight: bold;
+    font-size: large;
+    
+}
+
+
+  /*Fonts*/
+
+@font-face {
+    font-family: titlefont;
+    src: url(LostaMasta-Thin.ttf);
+}
+
+@font-face {
+    font-family: copyright;
+    src: url(AgrandizeDemoRegular.ttf);
+}

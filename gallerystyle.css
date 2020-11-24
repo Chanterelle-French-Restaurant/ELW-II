@@ -1,0 +1,202 @@
+* {box-sizing: border-box;}
+/*Global styles*/
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: white;
+    padding: 0px;
+    cursor: default;
+}
+
+/*Header*/
+h1 {
+    color: goldenrod;
+    text-align: center;
+    font-family: titlefont;
+    font-size: 85px;
+    font-weight: 100;
+    padding: 0;
+}
+
+h1:hover {
+    color: slategray;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times;
+    font-weight: 10;
+    font-style: oblique;
+    padding: 0;
+    font-size: xx-large;
+}
+
+h1 + h2 {
+    margin-top: -65px;
+}
+
+.column {
+    float: left;
+    width: 33%;
+    padding: 10px;
+    height: 300px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /*Navbar*/
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 1.5s;
+    padding-top: 60px;
+    text-align:center;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: goldenrod;
+    display: block;
+    transition: 0.3s;
+    line-height: 130px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: 10;
+  
+  }
+  
+  .sidenav a:hover{
+    color: black;
+    transition: 1.2s ease;}
+
+  .butonel {
+    cursor: pointer;
+    font-size: 45px;
+    padding: 100px 20px 5px 20px;
+    font-weight: lighter;
+  }
+  .butonel:hover {
+    color: slategray;
+    transition: 1s ease;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    transition: 0.3s;
+  }
+  
+.closebtn:hover {
+    color: black;
+}
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 20x;}
+    .sidenav a {font-size: 18px;}
+  } 
+
+
+
+/*Gallery*/
+
+.sectiuni {
+  padding: 0px 5px 0px 10px;
+  margin: 50px 100px 25px 100px;
+}
+
+.sectiuni p {
+  text-align: justify;
+  font-family: Georgia, 'Times New Roman', Times;
+  padding-top: 120px;
+  padding-left: 100px;
+  font-size: x-large;
+}
+
+.stanga {
+  float: left;
+  width: 50%;
+}
+
+.dreapta {
+  float: left;
+  width: 50%;
+  padding-left: 10px;
+}
+
+.mijloc {
+  float: right;
+  width: 50%;
+}
+
+.tmijloc {
+  padding-right: 80px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/*Footer*/
+
+footer {
+    text-align: center;
+    padding: 1px;
+    color: black;
+    font-family: copyright;
+    font-weight: bold;
+    font-size: large;
+    
+}
+
+   /*Fonts*/
+
+@font-face {
+    font-family: titlefont;
+    src: url(LostaMasta-Thin.ttf);
+}
+
+@font-face {
+    font-family: copyright;
+    src: url(AgrandizeDemoRegular.ttf);
+}
+
+/*Fade*/
+img {
+  opacity: 0.8;
+  transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+
+}
+img:hover {
+  opacity: 1.0;
+  transition: opacity .55s ease-in-out;
+  -moz-transition: opacity .55s ease-in-out;
+  -webkit-transition: opacity .55s ease-in-out; }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="For those who won't settle for anything less than the best french cuisine and artisanal wine in town.">
+    <meta name="keywords" content="Chanterelle, french restaurant, artisanal wine">
+    <meta name="author" content="Belu Gabriela">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanterelle – Contemporary French Restaurant</title>
+    <link rel="icon" href="chanterelles.png">
+    <link rel="stylesheet" href="gallerystyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="row">
+            <div class="column">
+
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">home</a>
+                    <a href="menu.html">menu</a>
+                    <a href="gallery.html">gallery</a>
+                    <a href="contact.html">where to find us</a>
+                </div>
+                <span class="butonel" onclick="openNav()">&#9776;</span>
+
+                <script>
+                    function openNav() {
+                        document.getElementById("mySidenav").style.width = "100%";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("mySidenav").style.width = "0";
+                    }
+                </script>
+            </div>
+
+            <div class="column">
+                <h1>Chanterelle</h1>
+                <h2>gallery</h2>
+            </div>
+        </div>
+    </header>
+
+    <!--Slideshow-->
+    <section class="sectiuni clearfix">
+        <img src="masa.jpg" class="stanga" alt="A nicely arranged festive table">
+        <p class="dreapta">
+            Chanterelle offers a unique contemporary setting to cater for birthday celebrations, corporate events,
+            dinners, product launches and holiday parties for up to 50 people.
+        </p>
+    </section>
+    <section class="sectiuni  clearfix">
+        <img src="bar (2).jpg" class="mijloc" alt="The bar storing numerous bottles">
+        <p class="dreapta tmijloc">
+            When it comes to drinks, our restaurant stores one of the largest selection of artisanal orange, rose, white
+            and red wines from local vineyards. Bubbly prosecco is also on the menu, for special occasions.
+        </p>
+    </section>
+
+    <section class="sectiuni  clearfix container">
+        <img src="appetizer-basil-caprese.jpg" class="stanga" alt="A plate with appetizer - caprese salad">
+        <p class="dreapta">
+            Chanterelle is not your average french restaurant, partly because we serve some of the best gourmet dishes
+            in town, and partly because our menu has a distinct flair.
+        </p>
+    </section>
+    <footer>
+        <h6>&copy; Gabriela Belu</h6>
+    </footer>
+</body>
+
+</html>

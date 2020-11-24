@@ -1,0 +1,186 @@
+* {box-sizing: border-box;}
+/*Global styles*/
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: white;
+    padding: 0px;
+    cursor: default;
+}
+
+/*Header*/
+h1 {
+    color: goldenrod;
+    text-align: center;
+    font-family: titlefont;
+    font-size: 140px;
+    font-weight: 100;
+    padding: 0;
+    margin-top: -30px;
+}
+
+h1:hover {
+    color: slategray;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+
+h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times;
+    font-weight: 10;
+    font-style: oblique;
+    padding: 0;
+    font-size: x-large;
+}
+
+h1 + h2 {
+    margin-top: -130px;
+}
+
+/*Navbar*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 1.5s;
+    padding-top: 60px;
+    text-align:center;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: goldenrod;
+    display: block;
+    transition: 0.3s;
+    line-height: 130px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: 10;
+  
+  }
+  
+  .sidenav a:hover{
+    color: black;
+    transition: 1.2s ease;}
+
+  .butonel {
+    cursor: pointer;
+    font-size: 45px;
+    padding: 100px 20px 5px 20px;
+    font-weight: lighter;
+  }
+  .butonel:hover {
+    color: slategray;
+    transition: 1s ease;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    transition: 0.3s;
+  }
+  
+.closebtn:hover {
+    color: black;
+}
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 20x;}
+    .sidenav a {font-size: 18px;}
+  }
+
+/*Slideshow*/
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 850px;
+  position: relative;
+  margin: auto;
+  padding-top: 30px;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+/*Content*/
+
+
+  p {
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times;
+    font-weight: 100;
+    font-size: x-large;
+  }
+  .column2 {
+    float: left;
+    width: 50%;
+    height: 300px;
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/*Footer*/
+
+  footer {
+    text-align: center;
+    padding: 1px;
+    color: black;
+    font-family: copyright;
+    font-weight: bold;
+    font-size: large;
+}
+
+/*Fonts*/
+
+@font-face {
+    font-family: titlefont;
+    src: url(LostaMasta-Thin.ttf);
+}
+
+@font-face {
+    font-family: copyright;
+    src: url(AgrandizeDemoRegular.ttf);
+}
